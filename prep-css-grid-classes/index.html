@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS Grid Classes</title>
+  <link rel="stylesheet" href="reset.css">
+  <style>
+    /* stylelint-disable block-no-empty */
+    body {
+      font-family: sans-serif;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .container {
+      max-width: 992px;
+      margin: auto;
+    }
+
+    .row {
+      width: 100%;
+      display: flex;
+    }
+
+    .column {
+      flex-basis: calc(100% / 3);
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+
+    h3 {
+      color: brown;
+      font-style: initial;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: xx-large;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <center><h3>Indiana Jones</h3></center>
+    <div class="row" >
+      <div class="column">
+        <img src="images/raiders.jpg" width="100%">
+        <p>
+          <b>Raiders of the Lost Ark</b><br>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid neque iste earum exercitationem eius adipisci, quo consequatur illo laboriosam repellendus hic beatae facilis mollitia reprehenderit quod fugit nam laborum corrupti.
+        </p>
+      </div>
+      <div class="column">
+        <img src="images/temple.jpg" width="100%">
+        <p>
+          <b>Temple of Doom</b><br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid neque iste earum exercitationem eius adipisci, quo
+                consequatur illo laboriosam repellendus hic beatae facilis mollitia reprehenderit quod fugit nam laborum corrupti.
+        </p>
+      </div>
+      <div class="column">
+        <img src="images/crusade.png" width="100%">
+        <p>
+          <b>The Last Crusade</b>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam sapiente facere esse. Consectetur maiores magni eligendi ipsam nam suscipit temporibus nihil, cupiditate ullam eum, praesentium veniam maxime? Quibusdam, consectetur maxime?
+        </p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
